@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS | Music Quiz Game</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  </head>
+  <body>
+    <section class="container text-center">
+      <div class="container">
+        <h1 class="page-header" id="banner">Music Quiz - Guess the Artist?</h1>
+        <div class="row">
+        <p>
+          <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseGameInfo" aria-expanded="false"
+            aria-controls="collapseExample">
+            Game Info
+            </button
+        </p>
+        <div class="collapse" id="collapseGameInfo">
+          <div class="card card-body">
+            <p>Click the
+              <strong>New Clue</strong> button to begin, the computer will then generate your music clue
+              <br> The main aim of the game is to guess the artist/band name and score as high as you can.
+              <br>The first 3 letters will be given to you + a picture to help - Good luck!
+              <br> Make sure you spell the names correctly!
+            </p>
+          </div>
+          <br>
+        </div>
+          <div class="jumbotron">
+            <h2>Music Game</h2>
+            <h3 id="score">Score:
+              <span id="score-value"></span>
+            </h3>
+            <h3 id="lives">Lives:
+              <span id="player-lives"></span>
+            </h3>
+            <form id="start-quiz-form">
+              <div class="form-group">
+                <button onclick="deleteImg()" id="new-clue" type="submit" class="btn btn-outline-primary btn-style">New Clue</button>
+              </div>
+            </form>
+              
+              <form id="answer-form">
+                <div class="form-group">
+                  <label class="sub-title" id="artist-label" for="artist"></label>
+                  <input class="text-center form-control" type="text" name="artist" placeholder="Enter Artist here..." id="artist">
+                  <button type="submit" class="btn btn-outline-success btn-style">Guess</button>
+                </div>
+              </form>
+
+              
+
+              <h3 class="sub-title">Artist clue</h3><br>
+              <div id="artist-clue">  </div> <br>
+              <div id="picture-clue"> </div>
+              
+              <!-- <br>
+              <br>
+            <h5 class="results">Answers so far...</h5>
+              <ul class="answers"></ul> -->
+          </div>
+          <!-- end of col classes -->
+        </div>
+        <!-- end of row -->
+        </div>
+        <!-- end of jumbotron -->
+      </div>
+      <!-- end of container -->
+    </section>
+    
+   <script type="text/javascript" src="main.js"></script>
+
+   <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  </body>
+</html>

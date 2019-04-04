@@ -1,0 +1,67 @@
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: inline-block;
+}
+
+#banner {
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 1rem;
+}
+
+#score {
+    color: green;
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+#lives {
+    color: dodgerblue;
+    display: inline-block;
+}
+
+p {
+    padding: 0 10px 0 10px;
+}
+
+p strong {
+    color: white;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+#artist-clue {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+#picture-clue {
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.answers {
+    list-style-type: none;
+}
+
+#artist {
+    display: inline-block;
+}
+
+.btn-style {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.results {
+    padding-top: 4rem;
+}
+
